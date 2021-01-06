@@ -1,0 +1,32 @@
+$white-color: #ffffff;
+$black-color: #22262A;
+$bg-color: #E7F5F8;
+
+$main-font: 'PoppinsRegular', sans-serif;
+
+$base-size: 15px;
+$baze-line: 1.5;
+
+$weight-light: 300;
+$weight-regular: 400;
+$weight-bold: 700;
+
+%PoppinsLight {
+	font-family: 'PoppinsLight';
+	font-weight: 300;
+}
+
+%PoppinsRegular {
+	font-family: 'PoppinsRegular';
+	font-weight: 400;
+}
+
+%PoppinsMedium {
+	font-family: 'PoppinsMedium';
+	font-weight: 500;
+}
+
+%PoppinsBold {
+	font-family: 'PoppinsBold';
+	font-weight: 700;
+}

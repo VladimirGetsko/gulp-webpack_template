@@ -1,0 +1,91 @@
+*,
+*::after,
+*::before {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	box-sizing: border-box;
+}
+
+body {
+	min-width: 320px;
+	overflow-x: hidden;
+	font-family: $main-font;
+	font-size: $base-size;
+	color: $black-color;
+	line-height: $baze-line;
+	background-color: $white-color;
+	overflow-x: hidden;
+	margin: 0;
+	padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	margin: 0;
+}
+
+ul, li {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+p {
+	padding: 0;
+	margin: 0;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+img {
+	display: block;
+	width: 100%;
+}
+
+.container{
+	width: 100%;
+	padding: 0 15px;
+
+	@include min992{
+		margin: 0 auto;
+		max-width: 1135px;
+	}
+
+	@include min1367{
+		max-width: 1310px;
+	}
+}
+
+.title {
+	text-transform: uppercase;
+}
+
+button {
+	&:focus {
+		border: none;
+		outline: none;
+	}
+}
+
+.btn {
+	width: 100%;
+	color: $white-color;
+	text-transform: uppercase;
+	font-size: 14px;
+	padding: 4px 12px;
+	border: none;
+	cursor: pointer;
+	@extend %PoppinsMedium;
+
+	@include min768 {
+		font-size: 18px;
+		line-height: 27px;
+		padding: 4px 24px;
+	}
+}
